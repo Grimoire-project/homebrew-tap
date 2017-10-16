@@ -6,7 +6,7 @@ class Grimoire < Formula
   depends_on :xcode => ["9.0", :build]
 
   def install
-      system "make", "swiftpm_install", "PREFIX=#{prefix}"
+      system "make", "install", "PREFIX=#{prefix}"
   end
 
   test do
